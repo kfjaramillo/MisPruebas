@@ -15,7 +15,7 @@ class FindbyIdName(unittest.TestCase):
         self.driver = webdriver.Edge() 
 
     #navegar a una web
-        self.driver.get("https://kfjaramillo.github.io/PaginaPruebas/")
+        self.driver.get("https://kfjaramillo.github.io/MisPruebas/")
 
 #Agregar un método las validaciones realizadas 
     def testClase(self):
