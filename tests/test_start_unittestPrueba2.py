@@ -20,7 +20,7 @@ class FindbyIdName(unittest.TestCase):
 #Agregar un método las validaciones realizadas 
     def testId(self):
 #busca un elemento en la página, en este caso ID cuyo atributo sea noImportante
-        elemento = self.driver.find_element(By.ID, "noImportante")
+        elemento = self.driver.find_element(By.ID, "Importante")
 
         #verifica si el elemento fue encontrado
         if elemento is not None:
@@ -28,11 +28,11 @@ class FindbyIdName(unittest.TestCase):
 
     def testName(self):
         #busca el elemento cuyo atributo NAME sea ultimo 
-        elemento2 = self.driver.find_element(By.NAME, "ultimo")
+        elemento2 = self.driver.find_element(By.CLASS_NAME, "rojo")
 
         #verifica si el elemento fue encontrado
         if elemento2 is not None:
-            print ("El elemento by NAME fue encontrado")
+            print ("El elemento by CLASS NAME fue encontrado")
 
     # Metodo para cerrar el driver 
     def tearDown(self):
